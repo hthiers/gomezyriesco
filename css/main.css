@@ -2,8 +2,14 @@
    Author's custom styles
    ========================================================================== */
 
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
     /*background-color: #E9E9E9;*/
+    margin-bottom: 40px;
 }
 
 .jumbotron {
@@ -23,8 +29,8 @@ body {
 
 footer {
     position: absolute;
-    /*bottom: 0;*/
-    /*height: 40px;*/
+    bottom: 0;
+    height: 40px;
     margin: 0;
     background-color: #f4f4f4;
     border-color: #e7e7e7;
