@@ -13,10 +13,22 @@ body {
 }
 
 .jumbotron {
-    background-image: url('../img/bg_edificio.png');
+    background-image: url('../img/libros_1920.png');
+    background-color: #fff;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: 90% 35%; 
+    background-position: 30% 25%; 
+    color: #fff;
+    margin-bottom: 0;
+    padding: 10px 0;
+}
+
+.jumbotron p {
+    margin-bottom: 0;
+}
+
+.bienvenida {
+    padding: 50px 0;
 }
 
 .navbar-default {
@@ -27,12 +39,44 @@ body {
     margin: 20px 0;
 }
 
+.destacado {
+    font-size: large;
+    font-weight: 600;
+    text-align: justify;
+    line-height: inherit;
+}
+
 footer {
     position: absolute;
     bottom: 0;
-    height: 40px;
+    /*height: 40px;*/
     margin: 0;
-    background-color: #f4f4f4;
-    border-color: #e7e7e7;
+    /*background-color: #f4f4f4;*/
+    /*border-color: #e7e7e7;*/
     width: 100%;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+h3 {
+    color: #222a4e;
+    font-weight: 600;
+}
+
+.logo {
+    margin: 20px 0;
+}
+
+dl {
+    font-size: large;
+}
+
+dt {
+    color: #222a4e;
+}
+
+dd {
+    margin-bottom: 10px;
 }
