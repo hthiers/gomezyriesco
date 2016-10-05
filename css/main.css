@@ -46,6 +46,22 @@ body {
     line-height: inherit;
 }
 
+.hero-feature {
+    margin-bottom: 0;
+}
+
+.hero-feature h3 {
+    /*margin-top: 5px;
+    margin-bottom: 5px;*/
+    
+    margin: 0;
+    font-size: 20px;
+}
+
+.thumbnail .caption {
+    padding: 5px;
+}
+
 footer {
     position: absolute;
     bottom: 0;
