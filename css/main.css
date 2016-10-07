@@ -10,6 +10,11 @@ html {
 body {
     background-color: #E9E9E9;
     margin-bottom: 40px;
+    padding-top: 70px;
+}
+
+.navbar {
+    min-height: 70px;
 }
 
 .logofield {
@@ -21,7 +26,7 @@ body {
     background-color: #fff;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: 30% 25%; 
+    background-position: 30% 1%; 
     color: #fff;
     margin-bottom: 0;
     padding: 10px 0;
@@ -59,7 +64,7 @@ body {
     margin-bottom: 5px;*/
     
     margin: 0;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .thumbnail .caption {
@@ -99,4 +104,39 @@ dt {
 
 dd {
     margin-bottom: 10px;
+}
+
+/* custom cols */
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+/* width */
+.col-xs-15 {
+    width: 20%;
+    float: left;
+}
+@media (min-width: 768px) {
+.col-sm-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        width: 20%;
+        float: left;
+    }
 }
