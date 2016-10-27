@@ -9,7 +9,7 @@ html {
 
 body {
     background-color: #E9E9E9;
-    margin-bottom: 40px;
+    margin-bottom: 100px;
     padding-top: 30px;
 }
 
@@ -32,8 +32,8 @@ body {
     border-top: 3px solid #328eaf;
     color: #fff;
     margin-bottom: 0;
-    padding: 10px 0;
-    min-height: 300px;
+    padding: 50px 20px;
+    min-height: 250px;
 }
 
 .jumbotron p {
@@ -41,7 +41,6 @@ body {
 }
 
 .bienvenida {
-    padding: 80px 20px;
     max-width: 1900px;
 }
 
@@ -90,13 +89,14 @@ body {
 }
 
 .navbar-toggle {
-    margin-right: 45px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .text-muted {
     margin: 20px 0;
     color: #fff;
-    font-size: small;
+    font-size: smaller;
 }
 
 .destacado {
@@ -130,6 +130,10 @@ footer {
     background-color: #282a2b;
     /*border-color: #e7e7e7;*/
     width: 100%;
+}
+
+footer p {
+    line-height: 1.0;
 }
 
 h1 {
