@@ -150,6 +150,11 @@ h3 {
     margin-left: 15px;
 }
 
+.logo-small {
+    max-width: 70%;
+    margin-left: 15px;
+}
+
 dl {
     font-size: large;
 }
@@ -160,6 +165,12 @@ dt {
 
 dd {
     margin-bottom: 10px;
+}
+
+.contenido {
+    margin-top: 20px;
+    background-color: #E9E9E9;
+    max-width: 1900px; 
 }
 
 /* custom cols */
