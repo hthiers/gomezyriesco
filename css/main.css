@@ -173,6 +173,18 @@ dd {
     max-width: 1900px; 
 }
 
+.titulo-perfil {
+    color: #328eaf;
+    margin: 0;
+    font-weight: 700;
+}
+
+.foto-perfil {
+    margin: 0;
+    margin-right: 5px;
+    float: left;
+}
+
 /* custom cols */
 .col-xs-15,
 .col-sm-15,
