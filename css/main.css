@@ -9,14 +9,14 @@ html {
 
 body {
     background-color: #E9E9E9;
-    margin-bottom: 100px;
+    margin-bottom: 95px;
     padding-top: 30px;
 }
 
 .logofield {
     background-color: #fff;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .logofield img {
@@ -43,12 +43,6 @@ body {
 .bienvenida {
     max-width: 1900px;
 }
-
-
-
-/*.navbar {
-    min-height: 15px;
-}*/
 
 .navbar-header {
     /*padding-top: 5px;*/
@@ -94,7 +88,7 @@ body {
 }
 
 .text-muted {
-    margin: 20px 0;
+    margin: 15px 0;
     color: #fff;
     font-size: smaller;
 }
