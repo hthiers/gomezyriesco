@@ -95,7 +95,7 @@ body {
 
 .destacado {
     font-size: medium;
-    font-weight: 600;
+    /*font-weight: 600;*/
     text-align: justify;
     line-height: inherit;
 }
@@ -171,6 +171,11 @@ dd {
     color: #328eaf;
     margin: 0;
     font-weight: 700;
+}
+
+.desc-perfil p {
+    text-align: justify;
+    margin-bottom: 25px;
 }
 
 .foto-perfil {
