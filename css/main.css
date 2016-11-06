@@ -13,6 +13,10 @@ body {
     padding-top: 30px;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 .logofield {
     background-color: #fff;
     padding-top: 10px;
