@@ -111,8 +111,25 @@
                         <p class="destacado">San Francisco Nº0946 - Temuco, Chile</p>
                         <p class="destacado">Teléfono: 56 45 2246262 - E-mail: secretaria@gomezyriesco.cl</p>
                     </div>
-                    <div class="thumbnail col-md-offset-1" style="margin-top: 25px; max-width: 520px;">
-                        <img src="img/mapa.PNG" alt="mapa" />
+                    <div class="thumbnail col-md-offset-1" style="margin-top: 25px; max-width: 510px;">
+                        <!--<img src="img/mapa.PNG" alt="mapa" />-->
+                        <div id="map" style="max-width: 510px; height: 330px;"></div>
+                        <script>
+                          function initMap() {
+                            var uluru = {lat: -38.7358852, lng: -72.6165322};
+                            var map = new google.maps.Map(document.getElementById('map'), {
+                              zoom: 17,
+                              center: uluru
+                            });
+                            var marker = new google.maps.Marker({
+                              position: uluru,
+                              map: map
+                            });
+                          }
+                        </script>
+                        <script async defer
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYEyu1Mgbhi_Zv2fzyQTvpMzPbZGt24j8&callback=initMap">
+                        </script>
                     </div>
                 </div>
 
