@@ -30,8 +30,75 @@
         <link rel="stylesheet" href="css/heroic-features.css">
         <link rel="stylesheet" href="css/main.css">
 
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-            
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>    
+        
+        <script type="text/javascript">
+            $(document).ready(function() {
+                // Get the form.
+                var form = $('#frmcontacto');
+
+                // Get the messages div.
+                var formMessages = $('#frmresult');
+                
+                $(form).submit(function(event) {
+                    // Stop the browser from submitting the form.
+                    event.preventDefault();
+                    
+                    // hide box
+                    $(formMessages).hide();
+
+                    // Serialize the form data.
+                    var formData = $(form).serialize();
+                    
+                    // Submit the form using AJAX.
+                    $.ajax({
+                        type: 'POST',
+                        url: $(form).attr('action'),
+                        data: formData
+                    })
+                    .done(function(response) {
+                        // Check result
+                        if(response === 'ok'){
+                            $(formMessages).removeClass('alert-danger');
+                            $(formMessages).addClass('alert-success');
+                            
+                            $(formMessages).text('Gracias por contactarnos.');
+                        }
+                        else{
+                            $(formMessages).removeClass('alert-success');
+                            $(formMessages).addClass('alert-danger');
+                            
+                            $(formMessages).text('Ha ocurrido un error.');
+                        }
+                        
+                        // show box
+                        $(formMessages).show();
+
+                        // Clear the form.
+                        //$('#name').val('');
+                        //$('#email').val('');
+                        //$('#message').val('');
+                    })
+                    .fail(function(data) {
+                        // Make sure that the formMessages div has the 'error' class.
+                        $(formMessages).removeClass('alert-success');
+                        $(formMessages).addClass('alert-danger');
+
+                        // Set the message text.
+                        if (data.responseText !== '') {
+                            $(formMessages).text(data.responseText);
+                        } else {
+                            $(formMessages).text('Ha ocurrido un error.');
+                        }
+                        
+                        // show box
+                        $(formMessages).show();
+                    });
+                });
+            });
+        </script>
+        
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -84,6 +151,8 @@
             <div class="row" style="padding: 20px 30px;">
                 
                 <h3 class="text-left" style="margin: auto; margin-bottom: 15px;">Contacto</h3>
+                
+                <div id="frmresult" class="alert" style="display: none; max-width: 350px; margin: auto; text-align: center;"></div>
                 
                 <div class="col-md-6">
                     <form id="frmcontacto" method="post" action="controllers/contacto_action.php">
@@ -148,7 +217,6 @@
             </div>
         </footer>
     
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/vendor/jquery.form.js"></script>
