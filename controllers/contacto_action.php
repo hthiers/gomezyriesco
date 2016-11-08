@@ -5,8 +5,8 @@ $fono = filter_input(INPUT_POST, "fono");
 $comentarios = filter_input(INPUT_POST, "comentarios");
 
 $from = 'contacto@gomezyriesco.cl'; 
-#$to = 'secretaria@gomezyriesco.cl'; 
-$to = 'hernanthiers@gmail.com'; 
+$to = 'secretaria@gomezyriesco.cl'; 
+#$to = 'hernanthiers@gmail.com'; 
 $subject = 'Contacto desde sitio web gomezyriesco.cl';
 
 $body = "De: $nombre\n E-Mail: $email\n Telefono: $fono\n Mensaje:\n $comentarios";
