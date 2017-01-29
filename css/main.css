@@ -32,7 +32,7 @@ a:hover {
     background-color: #000;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: 0% 10%; 
+    background-position: 0% 10%;
     border-top: 3px solid #328eaf;
     border-bottom: 3px solid #328eaf;
     color: #fff;
@@ -70,7 +70,7 @@ a:hover {
 }
 
 .navbar-nav > li > a {
-    padding-top: 5px !important; 
+    padding-top: 5px !important;
     padding-bottom: 5px !important;
 }
 
@@ -113,7 +113,7 @@ a:hover {
 .hero-feature h3 {
     /*margin-top: 5px;
     margin-bottom: 5px;*/
-    
+
     margin: 0;
     font-size: 17px;
 }
@@ -170,7 +170,7 @@ dd {
 .contenido {
     margin-top: 20px;
     background-color: #E9E9E9;
-    max-width: 1900px; 
+    max-width: 1900px;
 }
 
 .titulo-perfil {
@@ -187,7 +187,7 @@ dd {
 .foto-perfil {
     margin: 0;
     margin-right: 5px;
-    float: left;
+    /*float: left;*/
 }
 
 /* custom cols */
@@ -227,12 +227,13 @@ dd {
 
 .cuadro {
     background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-shadow: 0 1px 2px rgba(0,0,0,.075);
+    /*border: 1px solid #ddd;*/
+    /*border-radius: 4px;*/
+    /*box-shadow: 0 1px 2px rgba(0,0,0,.075);*/
     display: block;
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
     padding: 4px;
+    text-align: center;
 }
 
 .perfilrg {
