@@ -1,7 +1,7 @@
 /* ==========================================================================
    Author's custom styles
    - naranjo: C26919
-   - azul claro: 328eaf 
+   - azul claro: 328eaf
    ========================================================================== */
 
 html {
@@ -189,8 +189,8 @@ dd {
 .foto-perfil {
     margin: 0;
     margin-right: 5px;
-    /*border: 1px solid #ddd;*/
-    /*float: left;*/
+    border: 1px solid #ddd;
+    float: left;
 }
 
 /* custom cols */
@@ -236,7 +236,7 @@ dd {
     display: block;
     /*margin-bottom: 20px;*/
     padding: 4px;
-    text-align: center;
+    /*text-align: center;*/
 }
 
 .perfilrg {
