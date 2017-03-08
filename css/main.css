@@ -43,6 +43,22 @@ a:hover {
     min-height: 250px;
 }
 
+@media (min-width: 1600px) {
+  .jumbotron {
+      background-image: url('../img/bg_1920.jpg');
+      background-color: #000;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: 0% 10%;
+      border-top: 3px solid #328eaf;
+      border-bottom: 3px solid #328eaf;
+      color: #fff;
+      margin-bottom: 0;
+      padding-top: 80px;
+      min-height: 300px;
+  }
+}
+
 .jumbotron p {
     margin-bottom: 0;
     background: rgba(0, 0, 0, 0.3);
@@ -96,9 +112,17 @@ a:hover {
 }
 
 .text-muted {
-    margin: 15px 0;
+    margin: 20px 0;
     color: #fff;
     font-size: smaller;
+}
+
+@media (max-width: 768px) {
+  .text-muted {
+      margin: 15px 0;
+      color: #fff;
+      font-size: smaller;
+  }
 }
 
 .destacado {
@@ -166,7 +190,7 @@ dt {
 }
 
 dd {
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
 
 .contenido {
@@ -216,13 +240,13 @@ dd {
     }
 }
 @media (min-width: 992px) {
-    .col-md-15 {
+.col-md-15 {
         width: 20%;
         float: left;
     }
 }
 @media (min-width: 1200px) {
-    .col-lg-15 {
+.col-lg-15 {
         width: 20%;
         float: left;
     }
@@ -249,4 +273,17 @@ dd {
 .perfilrg:hover {
     background-image: url("../img/perfil_color_roman_gomez.png");
     background-repeat: no-repeat;
+}
+
+/* bloques solos en espacios chicos */
+@media (max-width: 320px) {
+  .clear-xs {
+    float: left;
+  }
+}
+
+@media (min-width: 1600px) {
+  .pushed-lg {
+    margin-top: 50px !important;
+  }
 }
